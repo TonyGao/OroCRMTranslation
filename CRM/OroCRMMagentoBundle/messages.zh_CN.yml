@@ -1,0 +1,629 @@
+"Website ID: %websiteId%, Stores: %storesList%": "网站ID: %websiteId%, 商店: %storesList%"
+
+orocrm:
+    magento:
+        dashboard:
+            e_commerce: 电子商务
+            my_sales_flow_b2c_chart:
+                title: 我的销售流B2C
+                description: 这个组件以漏斗图的形式提供了B2C工作流的快速预览
+            average_order_amount_chart:
+                title: 平均订单金额
+                description: 此组件以折线图的形式显示每个数据渠道的平均订单金额
+                order_amount: 订单数量
+                month: 月
+            new_magento_customers_chart:
+                title: 新的Magento客户
+                description: 这个组件提供了对新的mangento客户的快速预览
+                customer_count: 客户总数
+                month: 月
+            e_commerce_statistic:
+                title: 电子商务统计
+                description: 这个组件显示一组指标，用于指示你的电子商务渠道的效果。
+                sub_widgets.label: 指标
+                revenue.label: 收入
+                orders_number.label: 已下订单
+                discounted_orders_percent.label: 折扣订单
+                new_customers_count.label: 新客户
+                returning_customers_count.label: 老客户
+                average_order_value.label: 平均订单值
+                abandoned_revenue.label: 放弃收入
+                abandoned_count.label: 放弃购物车
+                abandon_rate.label: 放弃率
+                site_visits.label: 实地拜访
+                order_conversion.label: 订单转换率
+                customer_conversion.label: 客户转换率
+                compare_to.label: 比较日期
+            revenue_over_time_chart:
+                title: 按时间排列收入
+                description: 此组件让你对magento收入有个快速的预览
+                revenue: 收入
+                date: 日期
+                current_period: 当前期间
+                previous_period: 上一周期
+            orders_over_time_chart:
+                title: 按时间排列订单
+                description: 这个组件让你对magento订单有个快速的预览
+                order_count: 订单总数
+                date: 日期
+                current_period: 当前期间
+                previous_period: 上一周期
+            purchase_chart:
+                title: 购买漏斗
+                description: 这个组件让你对购买情况有一个快速的预览
+                visited: 已访问
+                deeply_visited: 已浏览
+                added_to_cart: 已添加到购物车
+                purchased: 已购买
+        datagrid:
+            views:
+                non_empty_carts.label: Magento购物车
+            actions:
+                view:
+                    label: 查看
+            columns:
+                originId:         ID
+                first_name:       姓
+                last_name:        名
+                email:            邮箱
+                phone:            电话
+                group:            分组
+                channel:          集成
+                website:          网站
+                name:             名称
+                sku:              库存单位
+                type:             类型
+                specialPrice:     特价
+                price:            价格
+                price_incl_tax:   含税价格
+                websites:         网站
+                qty:              数量
+                items_qty:        子项数量
+                currency:         货币
+                sub_total:        小计
+                grand_total:      合计
+                page_total:       页总计
+                gift_message:     礼品信息
+                row_total:        行总计
+                tax_amount:       税额
+                weight:           重量
+                added_on:         放置于
+                removed_at:       移除时间
+                updated_on:       更新于
+                increment_id:     "订单 #"
+                total_paid:       总支付
+                total_invoiced:   开票总数
+                subtotal_amount:  小计金额
+                shipping_amount:  运费金额
+                status:           状态
+                productType:      产品类型
+                originalPrice:    原价
+                discountPercent:  折扣率
+                discountAmount:   折扣金额
+                taxPercent:       税率
+                taxAmount:        税额
+                rowTotal:         行总计
+                billing_country:  办公国家
+                billing_region:   办公省
+                customer_is_guest:
+                    label: 是访客
+                order_is_guest:
+                    label: 是访客
+                is_subscriber:
+                    label: 是订阅者
+                    yes: 是
+                    no: 否
+                    unknown: 未定义
+                actions: 操作
+                discount_amount: 折扣金额
+                discount_percent: 折扣率
+                coupon_code: 优惠券代码
+        channel_type:
+            label:  Magento
+        transport:
+            soap:
+                label: SOAP v2 API
+        connector:
+            customer:
+                label: 客户连接器
+                initial.label: 初始化客户连接器
+            region:
+                label: 省份连接器
+            cart:
+                label: 购物车连接器
+                initial.label: 初始化购物车连接器
+            product:
+                label: 产品连接器
+            order:
+                label: 订单连接器
+                initial.label: 初始化订单连接器
+            newsletter_subscriber:
+                label: 内部通讯订阅器连接器
+                initial.label: 初始化内部通讯订阅器连接器
+            store:
+                label: 商店连接器
+            website:
+                label: 网站连接器
+            customer_group:
+                label: 顾客分组连接器
+        customer:
+            entity_label:        Magento 
+            entity_plural_label: Magento 顾客
+            entity_description:  Magento 顾客描述
+            create_order:        创建订单
+            register.label:      注册
+            sales.label:         销售
+            id.label:            Id
+            owner.label:         属于
+            origin_id.label:     起源 Id
+            name_prefix.label:   称呼前缀
+            first_name.label:    姓
+            middle_name.label:   中间名
+            last_name.label:     名
+            name_suffix.label:   称呼后缀
+            gender.label:        性别
+            birthday.label:      生日
+            email.label:         邮件
+            is_active.label:     是开启的
+            vat.label:           税/增值税
+            website.label:       网站
+            store.label:         商店
+            guest:
+                label:           是访客
+                yes:             是
+                no:              否
+            group.label:         顾客分组
+            contact.label:       联系人
+            account.label:       账户
+            addresses.label:     地址
+            carts.label:         购物车
+            channel.label:       集成
+            data_channel.label:  渠道
+            name.label:          名称
+            orders.label:        顾客订单
+            lifetime.label:      总周期销售业绩
+            currency.label:      货币
+            organization.label:  组织
+            monetary.label:      货币
+            recency.label:       新进度
+            frequency.label:     频繁
+            saved.message:       顾客已保存
+            address_book.title:  地址簿
+            password:
+                label:      密码
+                section:    密码管理
+                tooltip:    仅当密码不为空时设置密码
+            sync_state:
+                label: 同步状态
+                info: 部分同步
+            newsletter_subscribers.label: 内部通讯订阅器
+            confirmed.label: 确认
+            created_in.label: 创建于
+            imported_at.label: 导入时间
+            synced_at.label: 最近同步时间
+
+        customergroup:
+            entity_label:        Magento 客户分组
+            entity_plural_label: Magento 客户分组
+            name.label:          名称
+            id.label:            Id
+            origin_id.label:     起源 Id
+            channel.label:       集成
+            placeholder:         请选取分组
+
+        cart:
+            entity_label:         Magento 购物车
+            entity_plural_label:  Magento 购物车
+            entity_description:   Magento 购物车描述
+
+            refresh_label:             同步数据
+
+            id.label:                  购物车 Id
+            owner.label:               属于
+            origin_id.label:           起源 Id
+            items_qty.label:           子项数量
+            items_count.label:         子项总数
+            base_currency_code.label:  基本货币
+            store_currency_code.label: 商店货币
+            quote_currency_code.label: 报价货币
+            store_to_base_rate.label:  商店到基本汇率
+            store_to_quote_rate.label: 商店到报价汇率
+            first_name.label:          姓
+            last_name.label:           名
+            email.label:               邮箱
+            related_emails.label:      邮箱
+            gift_message.label:        礼品信息
+            is_guest.label:            是访客
+            payment_details.label:     付款
+            status:
+                label:                 状态
+                active:                开启
+                converted:             已转换
+            sub_total.label:           小计
+            sub_total_amount.label:    小计金额
+            grand_total.label:         总计
+            tax_amount.label:          税
+            cart_items.label:          购物车子项
+            active_cart_items.label:   开启的子项
+            deleted_cart_items.label:  删除的子项
+            customer.label:            顾客
+            store.label:               商店
+            shipping_address.label:    发货地址
+            billing_address.label:     办公地址
+            channel.label:             集成
+            data_channel.label:        渠道
+            opportunity.label:         商机
+            notes.label:               额外备注
+            b2c_flow_abandoned_shopping_cart.step.label: 节点
+            related_calls.label:       通话
+            workflow_item.label:       工作流子项
+            workflow_step.label:       工作流节点
+            website.label:             网站
+            status_message.label:      状态信息
+            organization.label:        组织
+            imported_at.label: 导入时间
+            synced_at.label: 最近同步时间
+
+        cartitem:
+            entity_label:              Magento 购物车子项
+            entity_plural_label:       Magento 购物车子项
+            custom_price.label:        自定义价格
+            description.label:         描述
+            discount_amount.label:     折扣金额
+            free_shipping.label:       免运费
+            gift_message.label:        礼物信息
+            id.label:                  购物车子项id
+            is_virtual.label:          是虚拟的
+            name.label:                名称
+            origin_id.label:           来源购物车id
+            parent_item_id.label:      父级购物车商品 id
+            price.label:               价格
+            price_incl_tax.label:      含税价格
+            product_id.label:          产品 id
+            product_type.label:        产品类型
+            qty.label:                 数量
+            row_total.label:           行总计
+            sku.label:                 库存单位
+            tax_amount.label:          税额
+            tax_class_id.label:        税类 id
+            tax_percent.label:         税率
+            weight.label:              重量
+            cart.label:                购物车
+            product_image_url.label:   产品图片网址
+            product_url.label:         产品网址
+            channel.label:             渠道
+            removed.label:             已删除
+            owner.label:               属于
+
+        cartstatus:
+            entity_label:        Magento 购物车状态
+            entity_plural_label: Magento 购物车状态
+            label.label:         标签
+            name.label:          名称
+
+        orderitem:
+            entity_label:           Magento 订单商品
+            entity_plural_label:    Magento 订单商品
+            discount_amount.label:  折扣金额
+            discount_percent.label: 折扣率
+            id.label:               购物车商品 id
+            is_virtual.label:       是虚拟的
+            name.label:             名称
+            order.label:            订单
+            origin_id.label:        原始订单商品 id
+            original_price.label:   原始价格
+            price.label:            价格
+            product_options.label:  产品选项
+            product_type.label:     产品类型
+            qty.label:              数量
+            row_total.label:        行总计
+            sku.label:              库存单位
+            tax_amount.label:       税额
+            tax_percent.label:      税率
+            weight.label:           重量
+            channel.label:          渠道
+            owner.label:            属于
+
+        magentosoaptransport:
+            entity_label:                 Magento 集成渠道传输
+            entity_plural_label:          Magento 集成渠道传输
+            entity_description:           集成渠道传输描述
+            admin_url.label:              管理员后台网址
+            all_sites:                    全部网站
+            api_user.label:               SOAP API 用户
+            api_key.label:                SOAP API 秘钥
+            new_api_key.label:            新 SOAP API 秘钥
+            id.label:                     Id
+            is_extension_installed.label: 已安装扩展
+            is_wsi_mode.label:            兼容WS-I
+            guest_customer_sync.label:    访客顾客同步
+            guest_customer_sync.tooltip:  选择此选项将根据邮箱将访客订单合并到单独客户里。如果存在用此邮箱的注册顾客，所有用此邮箱的访客订单都将归入其账户。
+            sync_start_date.label:        同步开始日期
+            sync_start_date.tooltip:      这是数据同步的开始日期。 只有在此日期后更新的记录才会同步。
+            sync_range.label:             同步范围
+            website_id.label:             网站
+            website_id.tooltip:           这是与上面指定的 Magento 实例相关联的网站列表。每个渠道只能选取一个网站。要刷新此列表，单击控件旁边的同步网站列表链接。
+            websites.label:               网站
+            wsdl_url.label:               SOAP WSDL 网址
+            check_connection.label:       检查连接
+            initial_sync_start_date.label: 初始化同步开始日期
+            message:
+                native_soap: 本地 Magento API 已被使用；仅顾客和订单将同步
+                outdated_brige: OroBridge v.%extension_version% 是过时的版本
+
+        order:
+            entity_label:        Magento 订单
+            entity_plural_label: Magento 订单
+            entity_description:  Magento 订单描述
+
+            refresh_label:      同步数据
+            id.label:           Id
+            owner.label:        属于
+            increment_id.label: "订单 #"
+            items_qty.label:    商品数量
+            gift_message.label: 礼品信息
+            remote_ip.label:    远程地址
+            store_name.label:   网站
+            total_paid_amount.label:     总支付
+            total_invoiced_amount.label: 总计发票
+            total_refunded_amount.label: 已退款总额
+            total_canceled_amount.label: 已取消总计
+            first_name.label:       姓
+            last_name.label:        名
+            currency.label:         货币
+            payment_method.label:   付款方式
+            payment_details.label:  付款明细
+            subtotal_amount.label:  小计金额
+            shipping_amount.label:  运费金额
+            shipping_method.label:  邮寄方式
+            tax_amount.label:       税额
+            discount_amount.label:  折扣金额
+            coupon_code.label:      优惠券代码
+            discount_percent.label: 折扣率
+            total_amount.label:     总金额
+            status.label:           状态
+            customer.label:         顾客
+            addresses.label:        地址
+            store.label:            商店
+            cart.label:             购物车
+            items.label:            订单商品
+            is_virtual.label:       是虚拟的
+            is_guest:
+                label:              是访客
+                yes:                是
+                no:                 否
+            channel.label:          集成
+            data_channel.label:     渠道
+            notes.label:            额外备注
+            feedback.label:         反馈
+            b2c_flow_order_follow_up.step.label: 节点
+            related_emails.label:   邮箱
+            customer_email.label:   邮箱
+            related_calls.label:    通话
+            workflow_item.label:    工作流子项
+            workflow_step.label:    工作流节点
+            website.label:          网站
+            organization.label:     组织
+            sync_state:
+                label: 同步状态
+                info: 部分同步
+            imported_at.label: 导入时间
+            synced_at.label: 最后同步时间
+
+        product:
+            entity_label:         Magento 产品
+            entity_plural_label:  Magento 产品
+            entity_description:   Magento 产品描述
+
+            id.label:             Id
+            origin_id.label:      来源 Id
+            name.label:           名称
+            sku.label:            库存单位
+            type.label:           产品类型
+            special_price.label:  特价
+            price.label:          价格
+            cost.label:           成本
+            websites.label:       网站
+            channel.label:        集成
+
+        address:
+            entity_label:          Magento 顾客地址
+            entity_plural_label:   Magento 顾客地址
+            entity_description:    Magento 顾客地址描述
+            label.label:           标签
+            street.label:          街道
+            street2.label:         街道 2
+            city.label:            城市
+            postal_code.label:     邮编
+            region_text.label:     省
+            name_prefix.label:     称呼前缀
+            first_name.label:      姓
+            middle_name.label:     中间名
+            last_name.label:       名
+            name_suffix.label:     称呼后缀
+            primary.label:         主要
+            id.label:              Id
+            organization.label:    组织
+            origin_id.label:       来源 id
+            owner.label:           属于
+            types.label:           类型
+            country.label:         国家
+            region.label:          省
+            contact_address.label: 联络地址
+            contact_phone.label:   联络电话
+            phone.label:           电话
+            sync_state.label:      同步状态
+            channel.label:         渠道
+            country_name.label:      国家名称
+            country_iso2_code.label: 国家 ISO2 代码
+            country_iso3_code.label: 国家 ISO3 代码
+            region_name.label:       省名
+            region_code.label:       省 ISO 代码
+
+        cartaddress:
+            entity_label:        Magento 购物车地址
+            entity_plural_label: Magento 购物车地址
+            entity_description:  Magento 购物车地址描述
+            id.label:            Id
+            label.label:         标签
+            street.label:        街道
+            street2.label:       街道 2
+            city.label:          城市
+            postal_code.label:   邮编
+            organization.label:  组织
+            region_text.label:   省
+            name_prefix.label:   称呼前缀
+            first_name.label:    姓
+            middle_name.label:   中间名
+            last_name.label:     名
+            name_suffix.label:   名称后缀
+            origin_id.label:     来源 Id
+            country.label:       国家
+            region.label:        省
+            phone.label:         电话
+            country_name.label:      国家
+            country_iso2_code.label: 国家 ISO2 代码
+            country_iso3_code.label: 国家 ISO3 代码
+            region_name.label:       地区
+            region_code.label:       地区 ISO 代码
+            channel.label:       集合
+
+        orderaddress:
+            entity_label:        Magento 订单地址
+            entity_plural_label: Magento 订单地址
+            entity_description:  Magento 订单地址描述
+            id.label:            Id
+            city.label:          城市
+            country.label:       国家
+            region.label:        省
+            region_text.label:   省
+            first_name.label:    姓
+            middle_name.label:   中间名
+            last_name.label:     名
+            name_suffix.label:   称呼前缀
+            postal_code.label:   邮编
+            organization.label:  组织
+            fax.label:           传真
+            phone.label:         电话
+            owner.label:         属于
+            types.label:         类型
+            street.label:        街道
+            country_name.label:      国家
+            country_iso2_code.label: 国家 ISO2 代码
+            country_iso3_code.label: 国家 ISO3 代码
+            region_name.label:       地区
+            region_code.label:       地区 ISO 代码
+            channel.label:           渠道
+            origin_id.label:         来源 Id
+
+        store:
+            entity_label:        Magento 商店
+            entity_plural_label: Magento 商店
+            entity_description:  Magento 商店描述
+            id.label:            Id
+            origin_id.label:     来源 Id
+            code.label:          代码
+            name.label:          名称
+            channel.label:       集成
+            website.label:       网站
+            placeholder:         请选取商店
+
+        website:
+            entity_label:        Magento 网站
+            entity_plural_label: Magento 网站
+            entity_description:  Magento 网站描述
+            id.label:            Id
+            origin_id.label:     来源 Id
+            code.label:          代码
+            name.label:          名称
+            channel.label:       集成
+            default.label:       是默认的
+            default_group_id.label: 默认分组
+            sort_order.label:       排序
+
+        website_activity:
+            days_ago:   1天前|%count%天前
+            label:      网站市场活动
+            summary.label: 概要
+            events.label: 事件
+            metrics:
+                label: 指标
+                data:
+                    site_visit_count.label:         总访问次数
+                    last_visit_date.label:          最近访问于
+                    average_monthly_visits.label:   每月平均访问次数
+                    page_view_count.label:          总页面浏览量
+                    most_viewed_page.label:         最常浏览的网页
+                    last_viewed_page.label:         最近浏览的网页
+                    average_visit_views.label:      每次访问的平均查看次数
+                    last_login_date.label:          最近登录于
+                    item_added_count.label:         添加到购物车的商品
+                    last_item_date.label:           最近添加商品时间
+                    average_visit_items.label:      每个访问平均添加的商品数量
+                    checkout_count.label:           已完成结账
+                    last_checkout_date.label:       最近完成结账的时间
+                    average_visit_checkouts.label:  每次结账的平均访问次数
+            chart:
+                label: 用户行为
+                day: 天
+                event_count: 事件数量
+                legend:
+                    event_visit: 页面浏览量
+                    event_cart_item_added: 添加商品
+                    event_checkout_started: 结账
+        newslettersubscriber:
+            label:               内部通讯订阅器
+            entity_label:        Magento 内部通讯订阅器
+            entity_plural_label: Magento 内部通讯订阅器
+            id.label:            Id
+            origin_id.label:     来源 Id
+            channel.label:       集成
+            change_status_at.label: 状态修改日期
+            confirm_code.label:  验证码
+            customer.label:      顾客
+            data_channel.label:  渠道
+            store.label:         商店
+            website.label:       网站
+            organization.label:  组织
+            owner.label:         属于
+            email:
+                label: 邮箱
+                customer: 顾客邮箱
+            status:
+                label: 状态
+                subscribed: 已订阅
+                not_active: 未开启
+                unsubscribed: 未订阅
+                unconfirmed: 未确认
+            action:
+                subscribe: 订阅
+                unsubscribe: 未订阅
+            email.label:         邮箱
+            status.label:        状态
+            store.label:         商店
+
+        account:
+            no_customers_exist: 没有顾客存在
+
+        form:
+            choose_order:    选取一个订单...
+            choose_customer: 选取一个顾客...
+            choose_cart: 选取一个购物车...
+
+        controller:
+            transport_not_configure:       无法处理您的请求。检测到集成配置无效。
+            extension_required:            无法执行此操作，找不到Oro Bridge扩展。
+            synchronization_error:         无法从远程同步。
+            sync_error_with_magento:       与远程服务器同步失败，应重新同步订单。如果问题仍然存在，请与您的管理员联系。
+            synchronization_success:       数据已成功同步。
+            synchronization_failed_status: 购物车数据不是最新的
+        ping_site_error: 无法加载表单
+
+        order_information: 订单信息
+        customer_information: 顾客信息
+        general_information: 一般信息
+        cart_information: 购物车信息
+        communications: 通讯
+        entity_number: %entityName% %entityNumber%
+
+"E-commerce": "电子商务"

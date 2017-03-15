@@ -1,0 +1,180 @@
+Add Address: 添加地址
+oro.importexport.import.orocrm_contact.add_or_replace: 添加或替换
+oro.importexport.import.orocrm_contact.add: 添加
+orocrm:
+    dashboard:
+        my_contacts_activity:
+            title:       最近访问的联系人
+            view_all:    查看全部
+            description: 这个组件显示最近访问联系人的列表
+
+    contact:
+        menu:
+            contact_group_list.description:         联系人分组列表
+            contact_list.description:               联系人列表
+            shortcut_list_contacts.description:     联系人列表
+            shortcut_list_contacts.label:           显示联系人列表
+            shortcut_new_contact.description:       创建新联系人实例
+            shortcut_new_contact.label:             创建新联系人
+            shortcut_new_contact_group.description: 创建新联系人分组实例
+            shortcut_new_contact_group.label:       创建新联系人分组
+        controller:
+            contact_group.saved.message: 联系人分组已保存
+            contact.saved.message:       联系人已保存
+
+        #
+        # Form
+        #
+        form:
+            choose_contact:        选取一个联系人...
+            choose_contact_method: 选取一个联系人方法...
+            choose_phone:          选取一个电话...
+        #
+        # DataGrid
+        #
+        datagrid:
+            contact_name: 联系人名称
+            delete:       删除
+            view:         查看
+            update:       更新
+
+        #
+        # Entity oroCRM\Bundle\ContactBundle\Entity\Contact
+        #
+        entity_description:  联系人描述
+        entity_label:        联系人
+        entity_plural_label: 联系人
+
+        import: 导入联系人
+
+        accounts.label:      账户
+        add_entity:          添加联系人
+        addresses.label:     地址
+        assigned_to.label:   赋予
+        birthday.label:      生日
+        created_by.label:    创建人
+        description.label:   描述
+        email.label:         邮箱
+        emails.label:        邮箱
+        facebook.label:      社交网络
+        fax.label:           传真
+        first_name.label:    姓
+        gender.label:        性别
+        google_plus.label:   谷歌社交
+        groups.label:        分组
+        id.label:            Id
+        linked_in.label:     LinkedIn
+        job_title.label:     职务
+        last_name.label:     名
+        method.label:        联系方式
+        middle_name.label:   中间名
+        name_prefix.label:   称呼前缀
+        name_suffix.label:   称呼后缀
+        owner.label:         属于
+        reports_to.label:    领导
+        phones.label:        电话
+        primary_email.label: 主要邮箱
+        primary_phone.label: 主要邮箱
+        skype.label:         Skype
+        social.label:        社交
+        source.label:        来源
+        twitter.label:       Twitter
+        updated_by.label:    变更人
+        picture.label:       照片
+        organization.label:  组织
+        default_in_accounts.label: 账户默认联系人
+
+        #
+        # Entity oroCRM\Bundle\ContactBundle\Entity\ContactAddress
+        #
+        contactaddress:
+            city.label:          城市
+            country.label:       国家
+            entity_description:  联系人地址描述
+            entity_label:        联系人地址
+            entity_plural_label: 联系人地址
+            first_name.label:    姓
+            id.label:            Id
+            label.label:         标签
+            last_name.label:     名
+            middle_name.label:   中间名
+            name_prefix.label:   称呼前缀
+            name_suffix.label:   称呼后缀
+            organization.label:  组织
+            owner.label:         属于
+            postal_code.label:   邮政编码
+            primary.label:       主要
+            region.label:        省
+            region_text.label:   省
+            street.label:        街道
+            street2.label:       街道2
+            types.label:         类型
+
+            country_name.label:      国家名称
+            country_iso2_code.label: 国家 ISO2 代码
+            country_iso3_code.label: 国家 ISO3 代码
+            region_name.label:       省名称
+            region_code.label:       省 ISO 代码
+
+        #
+        # Entity oroCRM\Bundle\ContactBundle\Entity\ContactEmail
+        #
+        contactemail:
+            email.label:         邮箱
+            entity_description:  联系人邮箱描述
+            entity_label:        联系人邮箱
+            entity_plural_label: 联系人邮箱
+            id.label:            Id
+            owner.label:         属于
+            primary.label:       主要
+
+        #
+        # Entity oroCRM\Bundle\ContactBundle\Entity\ContactPhone
+        #
+        contactphone:
+            entity_description:  联系人电话描述
+            entity_label:        联系人电话
+            entity_plural_label: 联系人电话
+            id.label:            Id
+            owner.label:         属于
+            phone.label:         电话
+            primary.label:       主要
+
+        #
+        # Entity oroCRM\Bundle\ContactBundle\Entity\Group
+        #
+        group:
+            entity_description:  联系人分组描述
+            entity_label:        联系人分组
+            entity_plural_label: 联系人分组
+            id.label:            Id
+            label.label:         标签
+            manage:              管理分组
+            owner.label:         属于
+            organization.label:  组织
+            has_group.label:     有分组
+
+        #
+        # Entity oroCRM\Bundle\ContactBundle\Entity\Method
+        #
+        method:
+            entity_description:  联系方式描述
+            entity_label:        联系方式
+            entity_plural_label: 联系方式
+            label.label:         标签
+            name.label:          名称
+
+        #
+        # Entity oroCRM\Bundle\ContactBundle\Entity\Source
+        #
+        source:
+            entity_description:  联系人来源描述
+            entity_label:        联系人来源
+            entity_plural_label: 联系人来源
+            label.label:         标签
+            name.label:          名称
+        widgets:
+            account_contacts: 联系人
+
+        account:
+            no_contacts_exist: 没有联系人

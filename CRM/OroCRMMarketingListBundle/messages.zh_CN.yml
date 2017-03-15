@@ -1,0 +1,103 @@
+orocrm:
+    marketinglist:
+        entity_label:        营销列表
+        entity_plural_label: 营销列表
+        description.label:   描述
+        id.label:            Id
+        last_run.label:      最近使用
+        created_at.label:    创建时间
+        name.label:          名称
+        owner.label:         属于
+        organization.label:  组织
+        segment.label:       分割块
+
+        marketing_list_items.label:              营销列表子项
+        marketing_list_removed_items.label:      营销列表删除的子项
+        marketing_list_unsubscribed_items.label: 营销列表取消订阅的子项
+
+        controller:
+            unsubscribed: %entityName%已取消订阅
+            subscribed: %entityName%已订阅
+            removed: %entityName%已从列表删除
+            unremoved: 撤销成功
+
+        segment: 营销列表%name%分割块
+
+        refresh_list: 刷新列表
+
+        entity:
+            label:   数据实体
+            saved:   营销列表已保存
+
+        type:
+            label:   类型
+            dynamic: 动态
+            static:  请求时
+            manual:  手动
+
+        form:
+            choose_marketing_list_type:    选取营销列表类型
+            choose_marketing_list:         选取营销列表类型
+            importance: 重要的
+            columns_notice: 必须至少选择一个包含联系信息的字段。
+            available_fields_notice: 可用联系信息字段
+
+        datagrid:
+            subscribed: 已订阅
+            contactedTimes: 联络总数
+            lastContactedAt: 上次联络时间
+            refreshedOn: 刷新于
+            actions:
+                update.label: 更新
+                delete.label: 删除
+                view.label: 显示
+
+        entity_config:
+            choices:
+                email: 邮箱
+                phone: 电话
+            contact_information:
+                label: 联络信息
+
+        block:
+            general: 一般信息
+            items: 子项
+            removed: 已删除子项
+
+        action:
+            subscribe: 订阅
+            unsubscribe: 取消订阅
+            unremove: 撤销删除
+            remove: 删除
+
+        marketinglistitem:
+            entity_label: 营销列表子项
+            entity_plural_label: 营销列表子项
+            contacted_times.label: 联络次数
+            created_at.label: 创建时间
+            entity_id.label: 数据实体Id
+            id.label: Id
+            last_contacted_at.label: 最后一次联络时间
+            marketing_list.label: 营销列表
+
+        marketinglistunsubscribeditem:
+            entity_label: 营销列表取消订阅子项
+            entity_plural_label: 营销列表取消订阅子项
+            created_at.label: 创建时间
+            entity_id.label: 数据实体Id
+            id.label: Id
+            marketing_list.label: 营销列表
+
+        marketinglisttype:
+            entity_label: 营销列表类型
+            entity_plural_label: 营销列表类型
+            label.label: 标签
+            name.label: 名称
+
+        marketinglistremoveditem:
+            entity_label: 营销列表已删除子项
+            entity_plural_label: 营销列表已删除子项
+            created_at.label: 创建事件
+            entity_id.label: 数据实体Id
+            id.label: Id
+            marketing_list.label: 营销列表

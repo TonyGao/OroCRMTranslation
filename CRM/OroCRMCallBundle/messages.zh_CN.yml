@@ -1,0 +1,76 @@
+'New': '新建'
+'Create call': '创建通话'
+'Add call log': '添加通话日志'
+'Log': 'Log'
+'Call logged successfully': '通话已保存'
+'Call deleted successfully': '通话删除成功'
+
+orocrm:
+    dashboard:
+        recent_calls:
+            title: 最近通话
+            view_all: 查看全部
+            description: 这个组件显示了最近登记的通话
+
+    call:
+        menu:
+            call_list.description: 通话列表
+            shortcut_call_list.label: 显示通话列表
+            shortcut_call_list.description: 通话列表
+        form:
+            choose_or_enter_phone: 选取或输入一个电话号码...
+
+        controller:
+            call.saved.message: 通话已保存
+            call.deleted.message: 通话删除成功
+
+        datagrid:
+            date_time:    通话日期
+
+        sections:
+            general: 一般
+
+        widget:
+            call_information: 通话信息
+
+        log_call:    记录通话
+        update_log_call: 更新通话
+        view_call:   查看{{ entity }}日志
+        update_call: 更新{{ entity }}日期
+        delete_call: 删除{{ entity }}日志
+        created_by:  登记人{{ user }}
+        changed_by:  添加人{{ user }}, 变更人{{ editor }}
+        view:        查看通话日志
+
+        #
+        # OroCRM/Bundle/CallBundle/Entity/Call
+        #
+        entity_label:          通话
+        entity_plural_label:   通话
+        entity_description:    通话描述
+        id.label:              Id
+        subject.label:         标题
+        phone_number.label:    电话号码
+        owner.label:           属于
+        notes.label:           额外备注
+        duration.label:        持续时间
+        direction.label:       目标
+        call_status.label:     通话状态
+        call_date_time.label:  通话日期和时间
+        organization.label:    组织
+        direction_label.label: 目标
+
+        calldirection:
+            entity_label: 目标
+            entity_plural_label: 目标
+            label.label: 标签
+            name.label: 名称
+
+        block:
+            additional: 额外
+
+        callstatus:
+            entity_label: 通话状态
+            entity_plural_label: 通话状态
+            label.label: 标签
+            name.label: 名称

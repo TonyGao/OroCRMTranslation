@@ -1,0 +1,4 @@
+orocrm:
+    marketinglist:
+        contact_information_required: "至少一个字段必须包含联系信息"
+        contact_information_type: "至少一个字段必须包含类型为%type%的联系人信息"

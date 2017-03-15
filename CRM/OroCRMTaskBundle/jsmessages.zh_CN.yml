@@ -1,0 +1,8 @@
+"Task created successfully": 任务已创建成功
+"Create task": 创建任务
+orocrm:
+    task:
+        assigned_tasks_widget:
+            settings: 任务组件设定
+            number_of_tasks: 要显示的任务数量
+            description: "此组件允许您查看分配给您的任务"

@@ -1,0 +1,46 @@
+orocrm:
+    analytics:
+        less: 少于
+        more: 多于
+        from: 从
+        to: 到
+        best: 最好
+        worst: 最坏
+        title:
+            add_row: 添加分割块
+        rfm:
+            recency:
+                label: 最近
+                title: 最近
+            frequency:
+                label: 频繁
+                title: 频繁
+            monetary:
+                label: 货币价值
+                title: 货币价值
+            tooltip: RFM是一组很流行的指标，您可以用来评估你的客户，并快速识别出最好的。
+        form:
+            rfm_enable.label: 开启 RFM
+            recency.label: 最近
+            frequency.label: 频繁
+            monetary.label: 货币价值
+            rfm_setting.title: RFM 分割块配置
+            score.title: 得分
+            actions.title: 操作
+            hint:
+                recency: 天数，越少越好
+                frequency: 每年的订单，越多越好
+                monetary: 订单每年金额，美元，越多越好
+        rfmmetriccategory:
+            entity_label: RFM 度量类别
+            entity_plural_label: RFM 度量类别
+            category_index.label: 索引
+            category_type.label: 类型
+            id.label: Id
+            max_value.label: 最大值
+            min_value.label: 最小值
+            channel.label: 渠道
+            owner.label: 属于
+        recency.tooltip: 新近值是指自上次购买以来的天数。天数少意味着更高的分数，没有订单是最低的分数。
+        frequency.tooltip: 频繁值是客户在过去365天内下达的订单数量。更多订单意味着更高的分数。
+        monetary.tooltip: 货币价值是指客户在过去365天内下达的订单总金额。更大的数值意味着更好的分数。

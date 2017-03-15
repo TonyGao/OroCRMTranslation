@@ -1,0 +1,5 @@
+orocrm:
+    magento:
+        unique_customer_email.message: 此电子邮件地址已在使用中。请提供另一个。
+        start_sync_date.message: 新日期应小于或等于先前定义的日期。
+        unique_wsdl_url_and_website_ids.message: 已经使用带有WSDL网址和网站的集成。

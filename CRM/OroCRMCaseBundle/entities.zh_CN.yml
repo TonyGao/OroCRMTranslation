@@ -1,0 +1,14 @@
+case_source:
+    email: 邮箱
+    phone: 电话
+    web: 网站
+    other: 其他
+case_status:
+    open: 开启
+    in_progress: 进行中
+    resolved: 已解决
+    closed: 已关闭
+case_priority:
+    low: 低
+    normal: 普通
+    high: 高

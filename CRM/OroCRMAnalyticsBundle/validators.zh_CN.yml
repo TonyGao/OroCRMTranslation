@@ -1,0 +1,7 @@
+orocrm:
+    analytics:
+        validator:
+            categories:
+                order: 应该以%order%的顺序
+                count: 需要最小%count%
+                blank: 值不能为空

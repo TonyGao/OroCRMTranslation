@@ -1,0 +1,5 @@
+orocrm:
+    channel:
+        form:
+            customer_identity_selected_not_correctly.label: 客户身份选择不正确
+            integration_invalid.label: 所选渠道类型需要集成

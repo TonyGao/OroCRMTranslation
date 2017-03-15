@@ -1,0 +1,8 @@
+orocrm:
+    sales:
+        email:
+            error:
+                delete.more_one: 邮箱地址未被删除，线索具有多个电子邮件地址，无法设置新的主邮箱。
+        phone:
+            error:
+                delete.more_one: 电话号码未删除，线索有多个电话号码，无法设置新的主电话。

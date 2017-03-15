@@ -1,0 +1,123 @@
+orocrm:
+    case:
+        widgets:
+            account_cases: 账户客户服务
+            contact_cases: 联系人客户服务
+
+        datagrid:
+            id.label:                       案例 Id
+            case_number.label:              案例 ID
+            subject.label:                  标题
+            related_contact.label:          相关联系人
+            related_account.label:          相关账户
+            owner.label:                    属于
+            assigned_to.label:              赋予
+            reported_on.label:              汇报于
+            closed_on.label:                关闭于
+            source.label:                   来源
+            status.label:                   状态
+            priority.label:                 优先级
+
+        menu:
+            index.label: 客户服务
+
+        caseentity:
+            #
+            # OroCRM/Bundle/CaseBundle/Entity/CaseEntity
+            #
+            entity_label:                   客户服务案例
+            entity_plural_label:            客户服务案例
+            entity_description:             案例描述
+            subject.label:                  标题
+            description.label:              描述
+            resolution.label:               解决度
+            owner.label:                    属于
+            assigned_to.label:              赋予
+            closed_at.label:                关闭于
+            reported_at.label:              汇报于
+            related_contact.label:          相关联系人
+            related_account.label:          相关账户
+            source.label:                   来源
+            status.label:                   状态
+            priority.label:                 优先级
+            comments.label:                 备注
+            id.label:                       Id
+            organization.label:             组织
+
+        casecomment:
+            #
+            # OroCRM/Bundle/CaseBundle/Entity/CaseComment
+            #
+            entity_label:                   案例备注
+            entity_plural_label:            案例备注
+            entity_description:             案例备注描述
+            message.label:                  消息
+            public.label:                   公开
+            contact.label:                  联系人创建人
+            case.label:                     相关案例
+            updated_by.label:               变更人
+            owner.label:                    属于
+            id.label:                       Id
+            organization.label:             组织
+            attachment.label:               附件
+
+            action:
+                add: 添加备注
+                edit: 编辑备注
+                delete: 删除备注
+            dialog:
+                add: 添加备注
+                edit: 编辑备注
+            message:
+                saved: 备注已保存
+                removed: 备注已删除
+                no_records: 没有备注。
+                delete_confirmation: 你确定想要删除这个备注吗？
+                updated_by: 由{{ user }}更新于{{ date }}
+            error:
+                load: 抱歉，备注没有加载成功。
+                delete: 抱歉，备注删除失败。
+
+        casepriority:
+            entity_label:                   案例优先级
+            entity_plural_label:            案例优先级
+            entity_description:             案例优先级描述
+            name.label:                     名称
+            label.label:                    标签
+            order.label:                    顺序
+
+        casesource:
+            entity_label:                   案例来源
+            entity_plural_label:            案例来源
+            entity_description:             案例来源描述
+            name.label:                     名称
+            label.label:                    标签
+
+        casestatus:
+            entity_label:                   案例状态
+            entity_plural_label:            案例状态
+            entity_description:             案例状态描述
+            name.label:                     名称
+            label.label:                    标签
+            order.label:                    顺序
+
+        block:
+            additional: 额外的
+            comments:   备注
+            general:    一般信息
+
+        message:
+            saved: 案例已保存
+
+        mailbox.process:
+            case.label: 转变到案例
+
+        casemailboxprocesssettings:
+            entity_label:                   案例邮箱进程设定
+            entity_plural_label:            案例邮箱进程设定
+            id.label:                       Id
+            assign_to.label:                分配给
+            owner.label:                    属于
+            priority.label:                 优先级
+            status.label:                   状态
+            mailbox.label:                  邮箱

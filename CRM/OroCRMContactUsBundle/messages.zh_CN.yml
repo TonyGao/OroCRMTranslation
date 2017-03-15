@@ -1,0 +1,55 @@
+orocrm:
+    contactus:
+        contactrequest:
+            entity_label:                   联络请求
+            entity_plural_label:            联络请求
+            id.label:                       ID
+            first_name.label:               姓
+            last_name.label:                名
+            email_address.label:            邮箱
+            phone.label:                    电话
+            comment.label:                  备注
+            feedback.label:                 反馈
+            contact_reason.label:           联系原因
+            choose_contact_reason.label:    选取一个联系原因...
+            status.label:                   状态
+            opportunity.label:              商机
+            lead.label:                     线索
+            calls.label:                    致电
+            emails.label:                   邮件
+            workflow_item.label:            工作流子项
+            workflow_step.label:            工作流节点
+            organization_name.label:        组织名称
+            preferred_contact_method.label: 首选联系方式
+            owner.label:                    组织
+            data_channel.label:             渠道
+
+            datagrid:
+                update: 更新
+                delete: 删除
+                view:   显示
+
+            method:
+                email: 邮箱
+                phone: 电话
+                both:  电话和邮箱
+
+            widget:
+                info:
+                    title: 联络请求明细
+            entity:
+                saved: 联络请求已成功保存
+
+        contactreason:
+            entity_label: 联络原因
+            entity_plural_label: 联络原因
+            entity_description: 联络原因请求
+            id:
+                label: ID
+            label:
+                label: 标签
+
+        block:
+            general:                一般
+            additional:             额外
+            request_information:    请求信息

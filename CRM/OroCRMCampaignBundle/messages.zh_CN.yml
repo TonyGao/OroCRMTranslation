@@ -1,0 +1,156 @@
+orocrm:
+    campaign:
+        entity_description:  营销活动
+        entity_label:        活动
+        entity_plural_label: 活动
+        id.label:            Id
+        name.label:          名称
+        name.description:    此值不应超过100个字符。
+        code.label:          代码
+        code.description:    此值不应超过20个字符。
+        combined_name.label: 组合名称
+        start_date.label:    开始日期
+        end_date.label:      结束日期
+        description.label:   描述
+        budget.label:        预算
+        owner.label:         属于
+        report_refresh_date.label: 报表刷新日期
+        form:
+            choose_campaign: 选取活动
+        report_period:
+            label: 报表时间刻度
+            hour:  每小时
+            day:   每天
+            month: 每月
+            description: |
+                这是记录的事件图的时间刻度。
+                如果项目数量超过40，它将增加到更大刻度。
+        controller:
+            campaign.saved.message:  "活动已保存"
+        menu:
+            marketing_tab.label: 营销
+        datagrid:
+            actions:
+                view.label: 显示
+                update.label: 更新
+                delete.label: 删除
+
+        block:
+            general: 一般信息
+            events: 事件
+            detailed_report: 详细活动报告
+
+        trackingevent:
+            report:
+                visits_count.label: 点击数
+                date.label:           日期
+
+        tracking_code:
+            label: 跟踪代码
+            info: |
+                要启动广告跟踪添加<code>?pk_campaign=%campaignCode%</code>到你的URL。
+                另一个选项是添加<code>_paq.push(['setCampaignName', '%campaignCode%']);</code>
+                来在<strong>setUserId</strong>调用之后跟踪脚本。
+        dashboard:
+            campaigns_leads:
+                title: 促销活动线索
+                description: 这个组件以条形图表的形式向你展示组织的最近5个主要促销活动带来的销售线索数量。
+            campaigns_opportunity:
+                title: 创造商机的促销活动
+                description: 这个组件会向你展示产生最多数量商机的前5个促销活动。
+            campaigns_by_close_revenue:
+                title: 按收入划分促销活动
+                description: 这个组件向你展示了产生最多收入的前5个促销活动。
+        organization:
+            label: 组织
+
+        emailcampaign:
+            entity_description:  电子邮件促销
+            entity_label:        电子邮件促销
+            entity_plural_label: 电子邮件促销
+            id.label:            Id
+            name.label:          名称
+            sender_email.label:  发送方邮箱
+            sender_name.label:   发送方名称
+            description.label:   描述
+            organization.label:  组织
+
+            transport.label:          传输
+            transport_settings.label: 传输设定
+
+            schedule:
+                label:    安排
+                manual:   手动
+                deferred: 推迟
+
+            scheduled_for.label:  计划
+            owner.label:          属于
+            marketing_list.label: 营销列表
+            template.label:       模板
+            created_at.label:     创建时间
+            updated_at.label:     变更时间
+            campaign.label:       促销活动
+            sent.label:           发送
+            sent_at.label:        发送时间
+            status:
+                sent: 已发送
+                not_sent: 未发送
+            block:
+                general: 一般信息
+                email_settings: 邮箱设定
+                recipients: 收件人
+                status: 促销活动结果
+            controller:
+                saved.message: "邮件促销活动已保存"
+                sent: "邮件促销活动已发送"
+                send_disallowed: "邮件促销活动无法发送。请检查所有的设定是否正确。"
+            datagrid:
+                actions:
+                    view.label: 查看
+                    update.label: 更新
+                    delete.label: 删除
+                campaignContactedTimes: 促销活动联络
+                campaignLastContactedAt: 促销活动最后一次联络时间
+            send: 发送
+            system_configuration:
+                campaign_sender_email: 发送方邮箱
+                campaign_sender_name: 发送方名称
+                title: 促销活动
+            transport:
+                internal: 奥诺CRM
+            stats:
+                open.label: 打开
+                click.label: 点击
+                bounce.label: 响应
+                abuse.label: 无效
+                unsubscribe.label: 取消订阅
+
+        acl:
+            send_emails:
+                label: 发送促销邮件
+                description: 邮件促销活动以手动发送邮件
+
+        emailcampaignstatistics:
+            entity_label: 邮件促销活动统计信息
+            entity_plural_label: 邮件促销活动统计信息
+            created_at.label: 创建时间
+            email_campaign.label: 邮件促销活动
+            id.label: Id
+            marketing_list_item.label: 营销列表子项
+            block.label: 邮件促销活动统计信息
+            abuse_count.label: 无效数量
+            bounce_count.label: 响应数量
+            click_count.label: 点击数量
+            open_count.label: 打开数量
+            unsubscribe_count.label: 取消订阅数量
+            organization.label: 组织
+            owner.label: 属于
+
+        internaltransportsettings:
+            entity_label: 邮件促销活动内部传输设定
+            entity_plural_label: 邮件促销活动内部传输设定
+            id.label: Id
+            template.label: 模板
+
+        privilege:
+            category.marketing.label: 市场

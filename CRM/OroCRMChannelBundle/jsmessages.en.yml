@@ -1,0 +1,23 @@
+"Configure integration":         "配置集成"
+"edit":                          "编辑"
+"Actions":                       "操作"
+"Entity":                        "数据实体"
+"Add":                           "添加"
+"Cancel":                        "退出"
+"View":                          "显示"
+"Edit":                          "编辑"
+"Delete":                        "删除"
+"There is no entities selected": "没有选中的数据实体"
+
+orocrm:
+    channel:
+        form:
+            entity: 请选择一个数据实体
+        confirmation:
+            delete_confirmation: '注意：从渠道删除此继承将从系统彻底删除它。继续吗？'
+            text:                你确定想要修改渠道类型吗？
+            title:               修改渠道类型
+            agree:               是的
+        entity_owner:
+            System: 系统
+            Custom: 自定义

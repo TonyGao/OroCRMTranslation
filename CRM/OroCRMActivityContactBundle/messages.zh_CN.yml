@@ -1,0 +1,27 @@
+orocrm:
+    activity_contact:
+        ac_last_contact_date:
+            label: 最后联络时间
+            description: 最后一次联系尝试的时间的描述
+        ac_last_contact_date_in:
+            label: 最近被联络的时间
+            description: 最近被联络尝试的时间的描述
+        ac_last_contact_date_out:
+            label: 最近主动联络的时间
+            description: 最近主动联络尝试的时间的描述
+        ac_contact_count:
+            label: 联络总次数
+            description: 所有联络尝试的总次数的描述
+        ac_contact_count_in:
+            label: 被联络尝试的总次数
+            description: 被联络尝试总次数的描述
+        ac_contact_count_out:
+            label: 主动联络尝试的总次数
+            description: 主动联络尝试的总次数
+
+        days_since_last_contact:
+            label: 自上次联络以来的天数
+
+        info_title_times: '已联络次数: {{ total_contacted }}'
+        info_title_last:  '最近一次联络: {{ direction }} {{ last_datetime }}'
+        info_title_no_data: 还没联络

@@ -1,0 +1,60 @@
+Addresses: 地址
+Basic Information: 基本信息
+orocrm:
+    dashboard:
+        my_accounts_activity:
+            title:                  最近访问的账户
+            view_all:               查看全部
+            description:            这个组件显示最近访问的账户列表
+
+    account:
+        menu:
+            customers_tab.label: 客户
+            account_list.description: 账户列表
+            shortcut_new_account.label: 创建新的账户
+            shortcut_new_account.description: 创建新的账户实例
+            shortcut_list_accounts.label: 显示账户列表
+            shortcut_list_accounts.description: 账户列表
+        widgets:
+            magento_channel:        Magento 渠道
+            account_information:    账户信息
+
+        account_actions:            账户操作
+
+        sections:
+            general:                一般
+            website_activity:       网站营销活动
+        form:
+            choose_account:         选择一个账户...
+            select_contacts:        选择一个联系人
+        controller:
+            account.saved.message:  "账户已保存"
+        #
+        # OroCRM/Bundle/AccountBundle/Entity/Account
+        #
+        entity_label:               账户
+        entity_plural_label:        账户
+        entity_description:         账户描述
+        id.label:                   Id
+        name.label:                 账户名称
+        owner.label:                属于
+        contacts.label:             联系人
+        default_contact.label:      默认联系人
+        phone.label:                电话
+        email.label:                邮箱
+        assigned.label:             已分配
+        referred_by.label:          推荐人
+
+        extend_description.label:   描述
+
+        lifetime_value.label:       终身销售价值
+
+        contact:
+            name:                   联系人姓名
+            first_name:             联系人姓
+            last_name:              联系人名
+            email:                  联系人邮箱
+            phone:                  联系人电话
+
+        organization:
+            label: 组织

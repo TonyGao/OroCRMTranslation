@@ -1,0 +1,20 @@
+orocrm:
+    marketing:
+        list:
+            change_entity_confirmation: 此模板数据可能包含与先前选择的实体相关的变量。要清除所有模板数据吗？
+    marketinglist:
+        refresh_dialog:
+            content: 请确认您要刷新此列表
+            success: 已成功刷新营销列表
+        remove_dialog:
+            confirm_title: 删除确认
+            confirm_ok: 是的
+            confirm_cancel: 退出
+            content: 你确定想要删除这个子项？
+            success: 已删除。
+        unremove_dialog:
+            confirm_title: 撤销删除确认
+            confirm_ok: 是的
+            confirm_cancel: 退出
+            content: 你确定想要撤销删除这个子项？
+            success: 已删除。

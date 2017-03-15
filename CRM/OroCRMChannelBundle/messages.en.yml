@@ -1,0 +1,58 @@
+orocrm:
+    channel:
+        entity_plural_label:                         渠道
+        entity_label:                                渠道
+        id.label:                                    Id
+        name.label:                                  名称
+        owner.label:                                 属于
+        entities.label:                              数据实体
+        data_source.label:                           集成
+        channel_type.label:                          渠道类型
+        customer_identity.label:                     顾客身份
+        status.label:                                状态
+        active.label:                                开启
+        inactive.label:                              关闭
+        data.label:                                  额外数据
+        tracking_website_channel_select.tooltip:     请选择此跟踪网站所属的渠道。根据渠道类型，可以应用不同的规则来进行客户识别。
+        button:
+            activate.label:       开启
+            deactivate.label:     关闭
+
+        customeridentity:
+            id.label:             Id
+            name.label:           名称
+            entity_label:         客户身份
+            entity_plural_label:  客户身份
+            account.label:        账户
+            contact.label:        联系人
+            owner.label:          属于
+            data_channel.label:   渠道
+        datagrid:
+            action:
+                update.label: 更新
+                delete.label: 删除
+
+        controller:
+                message:
+                    saved: 渠道已保存
+                    status:
+                        activated:     渠道已开启
+                        deactivated:   渠道已关闭
+        form:
+            select_entities.label:          请选择数据实体
+            select_data_source.label:       请选择顾客来源
+            select_customer_identity.label: 请选择客户身份
+            select_channel_type.label:      选取渠道类型...
+            select_channel_status.label:    选取渠道状态...
+        channel_type:
+            custom.label: 自定义
+
+        dashboard:
+            average_lifetime_sales_chart:
+                title:       平均生命周期销售额
+                description: 此组件以折线图的形式显示每个数据渠道的平均生命周期销售额
+                axis_label:  生命周期销售额
+                month:       月
+            e_commerce.label: 电子商务
+
+oro.embeddedform.data_channel.label: 渠道

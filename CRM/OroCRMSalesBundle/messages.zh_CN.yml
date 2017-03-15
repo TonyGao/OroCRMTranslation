@@ -1,0 +1,450 @@
+"New Contact Information": "新联系人信息"
+oro:
+    dashboard:
+        my_sales_flow:
+            b2b: B2B
+            b2c: B2C
+        business_sales_channel_statistics:
+            title: 商业销售渠道统计
+            description: 此组件显示一组指标，用于指示B2B渠道的效果。
+            new_leads_count.label: 新线索
+            open_leads_count.label: 打开线索
+            new_opportunities_count.label: 新商机计数
+            new_opportunities_amount.label: 新商机金额
+            won_opportunities_to_date_count.label: 目前为止赢取商机数量
+            won_opportunities_to_date_amount.label: 目前为止赢取商机的金额
+    entityextend:
+        enums:
+            lead_source:
+                entity_label:         线索来源
+                entity_plural_label:  线索来源
+                entity_description:   一个所有线索的来源列表的描述
+
+orocrm:
+    query_designer:
+        aggregates:
+            opportunity_status:
+                WonCount:
+                    name: 成交总数
+                    hint: Number of 'won' items
+                LostCount:
+                    name: 未成交总数
+                    hint: Number of 'lost' items
+                InProgressCount:
+                    name: 进行中的总数
+                    hint: Number of 'In Progress' items
+            opportunity:
+                WonRevenueSumFunction:
+                    name: 成交总收入
+                    hint: Sum close revenue for 'won' items
+
+    sales:
+        sections:
+            general:       一般
+            leads:         线索
+            opportunities: 商机
+        dashboard:
+            opportunities_by_state:
+                title:       按状态的商机
+                description: 这个组件按照状态以条形报表的形式显示商机分类。
+                quantity_as_data:
+                    label: 显示数据
+                    tooltip: '选取要在图表上显示的数据: 计数显示了一个特定状态商机的数量， 总额显示它们的总预算。'
+                    amount: 总额
+                    count:  总数
+                excluded_statuses:
+                    label: 排除的状态
+                    placeholder: 选取用于排除的状态
+            my_sales_flow_b2b_chart:
+                title:       我的销售流 B2B
+                description: 这个组件以漏斗图的形式提供给你一个B2B工作流的快速预览。
+            opportunities_by_lead_source_chart:
+                title:       按线索来源的商机
+                description: 这个组件以饼图的形式显示了按线索来源分类的一类商机。
+                excluded_sources:
+                    label: 已排除的来源
+                    tooltip: 选取将合并到其他分组的线索来源
+                    placeholder: 选取需要排除的来源
+                by_amount:
+                    label: 显示数据
+                    tooltip: '选取要在图标上显示的数据: 总数显示了特定线索来源的商机的数量，总额显示了它们的总预算。'
+                    count: 总数
+                    amount: 总额
+            forecast_of_opportunities:
+                title:       预测
+                description: 这个组件显示了商机的预测
+                in_progress.label: 过程中
+                total_forecast.label: 总预测
+                weighted_forecast.label: 加权预测
+                total_indeterminate_forecast.label: 总不确定性预测
+                weighted_indeterminate_forecast.label: 加权不确定性
+                metrics: 指标
+                no_changes: 没有变化
+                no_available_metrics: 没有可用指标
+                role: 角色
+                owner: 属于
+                compareToDate: 与上一周期比较
+                business_unit: 部门
+            opportunities_list:
+                title: 商机列表
+                description: 此组件可以配置为仅显示特定条件下的商机的列表，比如只打开当前用户所属的商机。
+                excluded_statuses:
+                    label: 排除状态
+                    placeholder: 选取用于排除的状态
+            leads_list:
+                title: 线索列表
+                description: 此组件可以配置为仅显示特定条件下的线索的列表，比如只打开属于当前用户所属的线索。
+                excluded_statuses:
+                    label: 已排除的状态
+                    placeholder: 选取用于排除的状态
+        menu:
+            sales_tab.label: 销售
+            lead_list.description: 线索列表
+            b2bcustomer_list.description: 商业客户列表
+            opportunity_list.description: 商机列表
+            sales_salesfunnel_list.description: 销售渠道列表
+            shortcut_list_leads.label: 显示线索列表
+            shortcut_list_leads.description: 线索列表
+            shortcut_list_opportunities.label: 显示商机列表
+            shortcut_list_opportunities.description: 商机列表
+            shortcut_new_lead.label: 创建新线索
+            shortcut_new_lead.description: 创建新线索
+            shortcut_new_opportunity.label: 创建新商机
+            shortcut_new_opportunity.description: 创建新商机
+            shortcut_list_b2bcustomers.label: 显示商业客户列表
+            shortcut_list_b2bcustomers.description: 商业客户列表
+        controller:
+            lead.saved.message: 线索已保存
+            opportunity.saved.message: 商机已保存
+            sales_funnel.saved.message: 销售过程已保存
+            b2bcustomer.saved.message: 客户已保存
+        form:
+            choose_opportunity: 选取一个商机....
+            choose_lead:        选取一个线索....
+            choose_b2bcustomer: 选取一个客户....
+            choose_close_rsn:   选取一个关闭原因...
+            tooltip:
+                account: 选取与该商机有关的客户账户。如果帐户名称与客户名称不同，则显示在括号中。要创建新客户帐户，请在控制中键入其名称，然后选择标记为新的选项。
+
+        #
+        # OroCRM/Bundle/SalesBundle/Entity/LeadStatus.php
+        #
+        leadstatus:
+            entity_label:         线索状态
+            entity_plural_label:  线索装填
+            entity_description:   线索状态描述
+            name.label:           名称
+            label.label:          标签
+        #
+        # OroCRM/Bundle/SalesBundle/Entity/OpportunityStatus.php
+        #
+        opportunitystatus:
+            entity_label:         商机状态
+            entity_plural_label:  商机状态
+            entity_description:   商机状态描述
+            name.label:           名称
+            label.label:          标签
+        #
+        # OroCRM/Bundle/SalesBundle/Entity/Opportunity.php
+        #
+        opportunity:
+            entity_label:         商机
+            entity_plural_label:  商机
+            entity_description:   商机描述
+            add_entity:           添加商机
+            id.label:             Id
+            name.label:           商机名称
+            close_date.label:     预计成交日期
+            probability.label:    成功概率
+            budget_amount.label:  预算金额
+            close_revenue.label:  成交收入
+            customer_need.label:  客户需求
+            proposed_solution.label: 推荐的解决方案
+            status.label:         状态
+            close_reason.label:   关闭原因
+            contact.label:        联系人
+            owner.label:          属于
+            notes.label:          额外备注
+            lead.label:           线索
+            workflow_item.label:  工作流子项
+            workflow_step.label:  节点
+            organization.label:   组织
+            customer.label:       账户
+            data_channel.label:   渠道
+            assigned.label:       赋予
+            created_at.label:     创建时间
+            updated_at.label:     更新时间
+            closed_at.label:      关闭时间
+            workflow:
+                close_date.label: 关闭日期
+            datagrid:
+                view:     查看
+                update:   更新
+                delete:   删除
+                columns.metric_name: 指标名称
+                views:
+                    open:            打开商机
+                    overdue:         逾期商机
+                    recently_closed: 最近关闭的商机
+        #
+        # OroCRM/Bundle/SalesBundle/Entity/OpportunityCloseReason.php
+        #
+        opportunityclosereason:
+            entity_label:         商机关闭原因
+            entity_plural_label:  商机关闭原因
+            entity_description:   商机关闭原因描述
+            name.label:           名称
+            label.label:          标签
+        #
+        # OroCRM/Bundle/SalesBundle/Entity/Lead.php
+        #
+        lead:
+            entity_label:         线索
+            entity_plural_label:  线索
+            entity_description:   线索描述
+            add_entity:           添加线索
+            id.label:             Id
+            name.label:           线索名称
+            name_prefix.label:    称呼前缀
+            first_name.label:     姓
+            middle_name.label:    中间名
+            last_name.label:      名
+            name_suffix.label:    称呼后缀
+            job_title.label:      职务
+            phone_number.label:   电话号码
+            phones.label:         电话
+            email.label:          邮箱
+            emails.label:         邮箱
+            company_name.label:   公司名称
+            website.label:        网站
+            number_of_employees.label: 雇员数量
+            industry.label:       行业
+            status.label:         状态
+            contact.label:        联系人
+            owner.label:          属于
+            address.label:        地址
+            addresses.label:      地址
+            add_address.label:    添加地址
+            details.label:        线索明细
+            source.label:         来源
+            notes.label:          额外备注
+            twitter.label:        Twitter
+            linked_in.label:      LinkedIn
+            opportunities.label:  商机
+            workflow_item.label:  工作流子项
+            workflow_step.label:  节点
+            information:          线索信息
+            contact_information:  联络信息
+            campaign.label:       促销活动
+            organization.label:   组织
+            customer.label:       商业客户
+            data_channel.label:   渠道
+            assigned.label:       已分配
+            primary_phone.label:  主要电话
+            primary_email.label:  主要邮箱
+            source:
+                unclassified:     没有来源
+                others:           其他
+                none:             无
+            status:
+                change_error_message:  不能改变线索状态。
+            convert:
+                 error:           不能转换线索为商机
+
+            datagrid:
+                number_of_employees: '# 个雇员'
+                country: 国家
+                region: 省
+                postal_code: 邮编
+                city: 城市
+                street: 街道
+                view: 显示
+                update: 更新
+                delete: 删除
+                views:
+                    open:            打开线索
+
+        #
+        # Entity oroCRM\Bundle\SalesBundle\Entity\LeadAddress
+        #
+        leadaddress:
+            city.label:          城市
+            country.label:       国家
+            entity_description:  线索的地址描述
+            entity_label:        线索地址
+            entity_plural_label: 线索地址
+            first_name.label:    姓
+            id.label:            Id
+            label.label:         标签
+            last_name.label:     名
+            middle_name.label:   中间名
+            name_prefix.label:   称呼前缀
+            name_suffix.label:   称呼后缀
+            organization.label:  组织
+            owner.label:         属于
+            postal_code.label:   邮编
+            primary.label:       主要
+            region.label:        省
+            region_text.label:   省
+            street.label:        街道
+            street2.label:       街道 2
+            country_name.label:      国家名称
+            country_iso2_code.label: 国家 ISO2 代码
+            country_iso3_code.label: 国家 ISO3 代码
+            region_name.label:       省名称
+            region_code.label:       省 ISO 代码
+
+        #
+        # Entity OroCRM/Bundle/SalesBundle/Entity/LeadPhone.php
+        #
+        leadphone:
+            entity_description:  线索电话描述
+            entity_label:        线索电话
+            entity_plural_label: 线索电话
+            id.label:            Id
+            owner.label:         属于
+            phone.label:         电话
+            primary.label:       主要
+
+        #
+        # Entity OroCRM\Bundle\SalesBundle\Entity\LeadEmail
+        #
+        leademail:
+            email.label:         邮箱
+            entity_description:  线索邮箱描述
+            entity_label:        线索邮箱
+            entity_plural_label: 线索邮箱
+            id.label:            Id
+            owner.label:         属于
+            primary.label:       主要
+
+        salesfunnel:
+            entity_label:         销售流程
+            entity_plural_label:  销售流程
+            new_entity:           新的销售流程
+            id.label:             '销售 #'
+            start_date.label:     开始日期
+            lead.label:           线索
+            opportunity.label:    商机
+            owner.label:          属于
+            workflow_item.label:  工作流子项
+            workflow_step.label:  节点
+            data_channel.label:   渠道
+            organization.label:   组织
+
+            hint: '销售流程#%id%'
+
+            datagrid:
+                view:   查看
+                update: 更新
+                delete: 删除
+        #
+        # OroCRM/Bundle/SalesBundle/Entity/B2bCustomer.php
+        #
+        b2bcustomer:
+            entity_label:               商业客户
+            entity_plural_label:        商业客户
+            entity_description:         商业客户描述
+            id.label:                   Id
+            name.label:                 客户名称
+            lifetime.label:             生命周期销售值
+            shipping_address.label:     收货地址
+            billing_address.label:      办公地址
+            account.label:              账户
+            contact.label:              联系人
+            data_channel.label:         渠道
+            leads.label:                线索
+            opportunities.label:        商机
+            owner.label:                属于
+            tags.label:                 标签
+            ownership.label:            所有权
+            emails.label:               邮箱
+            phones.label:               电话
+            rating.label:               评分
+            ticker_symbol.label:        股票代码
+            website.label:              网站
+            phones.label:               电话
+            emails.label:               邮箱
+            employees.label:            雇员
+            email.label:                邮箱
+            organization.label:         组织
+            opportunities.select:       选取商机
+            leads.select:               选取线索
+            primary_phone.label:        主要电话
+            primary_email.label:        主要邮箱
+            datagrid:
+                view:   查看
+                update: 更新
+                delete: 删除
+                columns:
+                    account_name.label: 账户名称
+                    contact_name.label: 联系人名称
+                    billing_address_country.label:      办公地址国家
+                    billing_address_region.label:       办公地址地区
+                    billing_address_city.label:         办公地址城市
+                    billing_address_street.label:       办公地址街道
+                    billing_address_postal_code.label:  办公地址邮编
+                    shipping_address_country.label:     收货地址国家
+                    shipping_address_region.label:      收货地址地区
+                    shipping_address_city.label:        收货地址城市
+                    shipping_address_street.label:      收货地址街道
+                    shipping_address_postal_code.label: 收货地址邮编
+            import: 导入
+
+        #
+        # Entity OroCRM\Bundle\SalesBundle\Entity\B2bCustomerPhone
+        #
+        b2bcustomerphone:
+            entity_description:  商业客户电话描述
+            entity_label:        商业客户电话
+            entity_plural_label: 商业客户电话
+            id.label:            Id
+            owner.label:         属于
+            phone.label:         电话
+            primary.label:       主要
+
+        #
+        # Entity oroCRM\Bundle\SalesBundle\Entity\B2bCustomerEmail
+        #
+        b2bcustomeremail:
+            email.label:         邮箱
+            entity_description:  商业客户邮箱描述
+            entity_label:        商业客户邮箱
+            entity_plural_label: 商业客户邮箱
+            id.label:            Id
+            owner.label:         属于
+            primary.label:       主要
+
+        widgets:
+            b2bcustomer_information: 商业客户信息
+            leads:                   线索
+            opportunities:           商机
+        channel_type:
+            b2b.label: 销售
+        mailbox.process:
+            lead.label:              转换为线索
+        leadmailboxprocesssettings:
+            entity_label:            线索邮箱过程设定
+            entity_plural_label:     线索邮箱过程设定
+            id.label:                Id
+            serialized_data.label:   序列化数据
+            source.label:            来源
+            channel.label:           渠道
+            owner.label:             属于
+
+        system_configuration:
+            groups:
+                crm.title: CRM
+                sales_pipeline.title: 销售渠道
+                opportunity.title: 商机
+                opportunity_status_probabilities:
+                    title:          成功概率
+                    options.label:  商机状态的默认成功概率
+                    options.tooltip: >
+                        管理商机状态并为其指定默认成功概率，
+                        除了系统状态为成交关闭和未成交关闭。
+            fields:
+                opportunity_status_probabilities:
+                    probability.tooltip:                       为这个状态输入默认成功概率 (%)
+        privilege:
+            category.sales_data.label: 销售数据

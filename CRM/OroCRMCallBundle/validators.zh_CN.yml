@@ -1,0 +1,5 @@
+orocrm:
+    call:
+        phone:
+            required:
+                message: "电话是必填的字段"

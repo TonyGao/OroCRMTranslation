@@ -1,0 +1,34 @@
+orocrm:
+    magento:
+        success: 连接成功，请从下面的列表中选择一个网站
+        success_bridge: 连接成功。您正在运行 OroBridge 的{{ extension_version }}版本。请从下面的列表中选择一个网站
+        outdated_warning: 你的 OroBridge 扩展版本{{ extension_version }}不是最新版了，因此它的功能将受限。请更新此扩展到最新版本{{ required_version }}并重新检查连接。
+        not_valid_parameters: 参数无效！
+        error: 检查请求期间发生错误，请稍后再试！
+        external_error:             发生外部错误
+        performing_synchronization: 正在执行同步...
+        view_order: 查看订单
+        autocomplete:
+            entity_number: "{{ entityName }} {{ entityNumber }}"
+        subscription:
+            success: 订阅已更新
+            error: 订阅未更新
+        customer_registration:
+            success: 客户已注册
+            error: 客户未注册
+        newslettersubscriber:
+            action:
+                confirm_title:
+                    unsubscribe: 取消订阅确认
+                    subscribe: 订阅确认
+                confirm_ok: 是
+                confirm_cancel: 取消
+                content:
+                    unsubscribe: 你确定想要取消订阅这个子项吗？
+                    subscribe: 你确定想要订阅这个子项吗？
+                success:
+                    unsubscribe: 已取消订阅
+                    subscribe: 已订阅
+                error:
+                    unsubscribe: 未取消订阅
+                    subscribe: 未订阅

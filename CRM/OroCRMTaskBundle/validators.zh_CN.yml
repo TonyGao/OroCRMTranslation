@@ -1,0 +1,2 @@
+"Due date must be set for {{ field }}": "必须为{{ field }}设定截止日期"
+"Due date must not be in the past": "截止日期不能是过去的日期"

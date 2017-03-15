@@ -1,0 +1,50 @@
+orocrm:
+    task:
+        menu:
+            task_list.description:  任务列表
+            my_tasks: 我的任务
+
+        #
+        # OroCRM/Bundle/TaskBundle/Entity/Task
+        #
+        entity_label:               任务
+        entity_plural_label:        任务
+        entity_description:         任务描述
+        subject.label:              标题
+        description.label:          描述
+        due_date.label:             截止日期
+        workflow_step.label:        状态
+        task_priority.label:        优先级
+        owner.label:                赋予
+        id.label:                   Id
+        workflow_item.label:        工作流子项
+        organization.label:         组织
+        status.label:               状态
+
+        user_tasks: 用户任务
+        info_widget_title: 任务信息
+        add_entity: 添加任务
+        add_entity.title: 添加一个任务到这条记录
+        assign_entity: 分配任务
+        assign_entity.title: 分配一个任务给此用户
+        assign_entity.widget_title: 分配任务给%username%
+        saved_message: 任务已保存
+
+        user_tasks_section: 任务
+        assigned_tasks_widget:
+            no_task_exist: 你没有待处理的任务
+            update_widget: 重载任务
+
+        view_task:   查看{{ entity }}
+        update_task: 更新{{ entity }}
+        delete_task: 删除{{ entity }}
+        created_by:  赋予人{{ user }}
+        changed_by:  赋予人{{ user }}, 变更人{{ editor }}
+        view:        显示任务
+
+        taskpriority:
+            entity_label: 任务优先级
+            entity_plural_label: 任务优先级
+            label.label: 标签
+            name.label: 名称
+            order.label: 顺序

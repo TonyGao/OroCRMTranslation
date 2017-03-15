@@ -1,0 +1,10 @@
+orocrm:
+    analytics:
+        less: 少于
+        more: 多余
+        from: 从
+        to: 到
+        na: 空
+        best: 最好
+        worst: 最坏
+        delete_row: 删除分割块

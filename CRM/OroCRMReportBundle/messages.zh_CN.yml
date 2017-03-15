@@ -1,0 +1,68 @@
+orocrm:
+    report:
+        menu:
+            static_reports_tab.label: 报表
+            accounts_report_tab.label: 账户
+            leads_report_tab.label: 线索
+            opportunities_report_tab.label: 商机
+            accounts_life_time_value.label: 生命周期
+            accounts_life_time_value.description: 账户声明周期报表
+            accounts_by_opportunities.label: 通过商机
+            accounts_by_opportunities.description: 通过商机汇报的账户
+            leads_by_date.label: 按日期的线索
+            leads_by_date.description: 按日期汇报的线索
+            opportunities_by_status.label: 按状态的商机
+            opportunities_by_status.description: 通过状态汇报的商机
+            won_by_period.label: 按期赢得商机
+            won_by_period.description: 按期汇报赢得商机
+            total_forecast.label: 总预算
+            total_forecast.description: 总预算报表
+        datagrid:
+            columns:
+                account_name:      账户名称
+                total_value:       成交收入
+                close_date:        成交日期
+                created_date:      创建时间
+                leads_count:       线索数量
+                period:            周期
+                number_won:        收获数量
+                status:            状态
+                number_of_opportunities: 商机数量
+                close_revenue:     成交收入
+                budget_amount:     预算金额
+                workflow:          工作流
+                wonCount:          收获数量
+                lostCount:         失去数量
+                inProgressCount:   进行中的商机
+                identificationAlignmentCount: 商机标识对齐
+                needsAnalysisCount: 商机需要分析
+                solutionDevelopmentCount: 商机解决方案开发
+                negotiationCount:  商机谈判
+                totalOps:          总共
+                probability:       成功概率
+                budgetAmount:      预算预测
+                weightedForecast:  加权预测
+                ownerName:         持有者名称
+
+        controller:
+            report:
+                wonCount:          收获数量
+                lostCount:         丢失数量
+                inProgressCount:   进行中的数量
+                totalOps:          总共
+
+        opportunitybyworkflowitem:
+            entity_label:        带工作流的商机
+            entity_plural_label: 带工作里的商机
+            entity_description:  ''
+            id.label:            Id
+            opportunity.label:   商机
+            workflow_item.label: 工作流子项
+
+        accounts_life_time_value: 账户生命周期值
+        accounts_by_opportunities: 按商机的账户
+        leads_by_date: 通过日期发生的数量
+        opportunities_by_status: 按状态划分的商机
+        opportunities_won_by_period: 按日期周期赢得商机
+        opportunities:
+            total_forecast: 预测
